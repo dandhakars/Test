@@ -1,29 +1,29 @@
 <?php
  echo "入力してください";
- $INPUT = fgets(STDIN);
+ $input = fgets(STDIN);
  echo "入力したもの:";
- echo $INPUT;
+ echo $input;
 
 $flug = true;
 do {
     print '\n';
     print 'a+bのaを入力（数字）';
-    $INPUT_a = fgets(STDIN);
+    $input_a = fgets(STDIN);
     print 'a = ';
-    print $INPUT_a;
+    print $input_a;
     print 'これでいいですか? y/n';
 
     do {
-        $INPUT =fgets(STDIN);
-        $INPUT = rtrim($INPUT);
+        $input =fgets(STDIN);
+        $input = rtrim($input);
 
-        if (strcasecmp($INPUT, 'Y') == 0
-                || strcasecmp($INPUT, 'y') == 0) {
-            $INPUT = rtrim($INPUT_a);
+        if (strcasecmp($input, 'Y') == 0
+                || strcasecmp($input, 'y') == 0) {
+            $input_a = rtrim($input_a);
             $flug = false;
             break;
-        } else if (strcasecmp($INPUT, 'N') == 0 
-                    || strcasecmp($INPUT, 'n') == 0) {
+        } else if (strcasecmp($inpput, 'N') == 0 
+                    || strcasecmp($input, 'n') == 0) {
             break;
         }
     } while (true);
@@ -34,36 +34,36 @@ $FLUG = true;
 do {
     print '\n';
     print 'a+bのbを入力（数字）';
-    $INPUT_b = fgets(STDIN);
+    $input_b = fgets(STDIN);
     print 'b = ';
-    print $INPUT_b;
+    print $input_b;
     print 'これでいいですか? y/n';
 
     do {
-        $INPUT =fgets(STDIN);
-        $INPUT = rtrim($INPUT);
+        $input =fgets(STDIN);
+        $input = rtrim($input);
 
-        if (strcasecmp($INPUT, 'Y') == 0
-                || strcasecmp($INPUT, 'y') == 0) {
-            $INPUT = rtrim($INPUT_b);
+        if (strcasecmp($input, 'Y') == 0
+                || strcasecmp($input, 'y') == 0) {
+            $input_b = rtrim($input_b);
             $flug = false;
             break;
-        } else if (strcasecmp($INPUT, 'N') == 0
-                    || strcasecmp($INPUT, 'n') == 0) {
+        } else if (strcasecmp($input, 'N') == 0
+                    || strcasecmp($input, 'n') == 0) {
             break;
         }
     } while (true);
 } while ($flug);    
 
-$addAB = intval($INPUT_a) + intval($INPUT_b);
+$add_ad = intval($input_a) + intval($input_b);
 print 'a + b = ';
-print $addAB;
+print $add_ad;
 print "\n";
 
 while (true) {
-    $INPUT = fgets(STDIN);
-    $INPUT = rtrim($INPUT);
-    if (strcasecmp($INPUT, '\e') == 0) {
+    $input = fgets(STDIN);
+    $input = rtrim($input);
+    if (strcasecmp($input, '\e') == 0) {
         return;
     }
 }
