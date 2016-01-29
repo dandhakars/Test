@@ -1,17 +1,17 @@
 <?php
  echo "入力してください";
  $input = fgets(STDIN);
- echo "入力したもの:";
+ echo "入力したもの : ";
  echo $input;
 
 $flug = true;
 do {
     print '\n';
-    print 'a+bのaを入力（数字）';
+    print ' a + b の a を入力（数字）';
     $input_a = fgets(STDIN);
     print 'a = ';
     print $input_a;
-    print 'これでいいですか? y/n';
+    print 'これでいいですか?  y/n';
 
     do {
         $input =fgets(STDIN);
@@ -33,11 +33,11 @@ do {
 $FLUG = true;
 do {
     print '\n';
-    print 'a+bのbを入力（数字）';
+    print 'a + b の b を入力（数字）';
     $input_b = fgets(STDIN);
     print 'b = ';
     print $input_b;
-    print 'これでいいですか? y/n';
+    print 'これでいいですか?  y/n';
 
     do {
         $input =fgets(STDIN);
